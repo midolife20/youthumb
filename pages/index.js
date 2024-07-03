@@ -37,7 +37,7 @@ const Index = () => {
     <div className="container mx-auto px-4 py-8">
       <header className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2">
-          Youtube Thumbnail Downloader
+          Youtube Thumbnail Extractor
         </h1>
         <p className="text-gray-600">
           Download high-quality thumbnails from YouTube videos.
@@ -55,7 +55,7 @@ const Index = () => {
           className="btn-blue mt-2"
           onClick={() => getYouTubeThumbnail(videoURL)}
         >
-          Download Thumbnails
+          Download Youtube Thumbnails
         </button>
       </div>
       {thumbnailOptions.length > 0 && (
