@@ -23,11 +23,6 @@ class MyDocument extends Document {
             content="Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://example.com/" />
-          <meta
-            property="og:image"
-            content="https://example.com/thumbnail.jpg"
-          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -83,7 +78,7 @@ class MyDocument extends Document {
             .separator {
               width: 100%;
               height: 1px;
-              background-color: #ccc;
+              background-color: #FF5757;
               margin: 20px 0;
             }
 
@@ -92,7 +87,7 @@ class MyDocument extends Document {
               padding-top: 20px;
               border-top: 1px solid #ccc;
               text-align: center;
-              color: #777;
+              color: #FF5757;
             }
 
             footer a {
@@ -111,7 +106,7 @@ class MyDocument extends Document {
           <header>
             <a href="/">
               <div className="logo">
-                <img src="https://cpmr-islands.org/wp-content/uploads/sites/4/2019/07/Test-Logo-Small-Black-transparent-1.png" alt="Logo" />
+                <img src="https://i.ibb.co/rG648zG/Untitled-1000-x-100-px.png" alt="Logo" />
               </div>
             </a>
           </header>
