@@ -1,3 +1,5 @@
+// pages/_document.js
+
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -5,6 +7,10 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="description" content="YouTube Thumbnail Extractor - Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes." />
+          <title>YouTube Thumbnail Extractor</title>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -23,16 +29,13 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
-          
-          {/* Additional meta tags or other headers can go here */}
-          <title>YouTube Thumbnail Extractor</title>
+          <link rel="stylesheet" href="/styles.css" />
         </Head>
         <body>
           <Main />
           <NextScript />
 
-          {/* Your additional text content */}
-          <section>
+          <section className="content">
             <h1>YouTube Thumbnail Extractor</h1>
             <p>
               Get free thumbnail images of any YouTube videos in Full HD (1080), HD (720), SD, and small sizes.
@@ -65,6 +68,24 @@ class MyDocument extends Document {
               No, reusing YouTube thumbnails is not SEO friendly as Google indexes them. Make your thumbnails unique using software like Photoshop for better SEO results.
             </p>
           </section>
+
+          <style jsx>{`
+            body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              padding: 20px;
+              max-width: 800px;
+              margin: 0 auto;
+            }
+            
+            h1, h2 {
+              color: #333;
+            }
+            
+            p {
+              margin-bottom: 20px;
+            }
+          `}</style>
         </body>
       </Html>
     );
