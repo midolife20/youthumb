@@ -76,15 +76,6 @@ const Index = () => {
           </div>
         </div>
       )}
-      <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-4">Share on Social Media</h2>
-        <div className="flex justify-center space-x-4">
-          <button className="btn-social-facebook">Share on Facebook</button>
-          <button className="btn-social-instagram">Share on Instagram</button>
-          <button className="btn-social-twitter">Share on Twitter</button>
-          {/* Add more social media buttons as needed */}
-        </div>
-      </div>
     </div>
   );
 };
