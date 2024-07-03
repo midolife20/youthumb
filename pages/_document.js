@@ -36,6 +36,7 @@ class MyDocument extends Document {
           <NextScript />
 
           <section className="content">
+            <div className="separator"></div>
             <h1>YouTube Thumbnail Extractor</h1>
             <p>
               Get free thumbnail images of any YouTube videos in Full HD (1080), HD (720), SD, and small sizes.
@@ -84,6 +85,13 @@ class MyDocument extends Document {
             
             p {
               margin-bottom: 20px;
+            }
+
+            .separator {
+              width: 100%;
+              height: 1px;
+              background-color: #ccc;
+              margin: 20px 0;
             }
           `}</style>
         </body>
