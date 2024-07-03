@@ -1,3 +1,5 @@
+// pages/_document.js
+
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -7,8 +9,25 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="description" content="YouTube Thumbnail Extractor - Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes." />
+          <meta
+            name="description"
+            content="YouTube Thumbnail Extractor - Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes."
+          />
           <title>YouTube Thumbnail Extractor</title>
+          <meta
+            property="og:title"
+            content="YouTube Thumbnail Extractor"
+          />
+          <meta
+            property="og:description"
+            content="Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://example.com/" />
+          <meta
+            property="og:image"
+            content="https://example.com/thumbnail.jpg"
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -32,7 +51,7 @@ class MyDocument extends Document {
             body {
               font-family: Arial, sans-serif;
               line-height: 1.6;
-              padding: 1px;
+              padding: 20px;
               max-width: 800px;
               margin: 0 auto;
             }
@@ -58,7 +77,7 @@ class MyDocument extends Document {
             }
 
             .content {
-              margin-top: 10px; /* Adjust the top margin */
+              margin-top: 20px;
             }
 
             .separator {
