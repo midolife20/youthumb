@@ -1,5 +1,3 @@
-// pages/_document.js
-
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -29,13 +27,80 @@ class MyDocument extends Document {
             href="/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/favicon/site.webmanifest" />
-          <link rel="stylesheet" href="/styles.css" />
+          {/* Link your styles directly here */}
+          <style>{`
+            body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              padding: 1px;
+              max-width: 800px;
+              margin: 0 auto;
+            }
+
+            header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 1px 0;
+              border-bottom: 1px solid #ccc;
+            }
+
+            .logo img {
+              height: 80px; /* Adjust height as needed */
+            }
+
+            h1, h2 {
+              color: #333;
+            }
+
+            p {
+              margin-bottom: 20px;
+            }
+
+            .content {
+              margin-top: 10px; /* Adjust the top margin */
+            }
+
+            .separator {
+              width: 100%;
+              height: 1px;
+              background-color: #ccc;
+              margin: 20px 0;
+            }
+
+            footer {
+              margin-top: 40px;
+              padding-top: 20px;
+              border-top: 1px solid #ccc;
+              text-align: center;
+              color: #777;
+            }
+
+            footer a {
+              color: #777;
+              text-decoration: none;
+              margin: 0 10px;
+            }
+
+            footer a:hover {
+              text-decoration: underline;
+              color: #333;
+            }
+          `}</style>
         </Head>
         <body>
+          <header>
+            <a href="/">
+              <div className="logo">
+                <img src="https://cpmr-islands.org/wp-content/uploads/sites/4/2019/07/Test-Logo-Small-Black-transparent-1.png" alt="Logo" />
+              </div>
+            </a>
+          </header>
           <Main />
           <NextScript />
 
           <section className="content">
+            {/* Separator before the first line of text */}
             <div className="separator"></div>
             <h1>YouTube Thumbnail Extractor</h1>
             <p>
@@ -70,30 +135,14 @@ class MyDocument extends Document {
             </p>
           </section>
 
-          <style jsx>{`
-            body {
-              font-family: Arial, sans-serif;
-              line-height: 1.6;
-              padding: 20px;
-              max-width: 800px;
-              margin: 0 auto;
-            }
-            
-            h1, h2 {
-              color: #333;
-            }
-            
-            p {
-              margin-bottom: 20px;
-            }
-
-            .separator {
-              width: 100%;
-              height: 1px;
-              background-color: #ccc;
-              margin: 20px 0;
-            }
-          `}</style>
+          <footer>
+            <p>&copy; {new Date().getFullYear()} YouTube Thumbnail Extractor. All rights reserved.</p>
+            <nav>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </footer>
         </body>
       </Html>
     );

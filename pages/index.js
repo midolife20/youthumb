@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import copy from "copy-to-clipboard";
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
   const [thumbnailOptions, setThumbnailOptions] = useState([]);
+  const inputRef = useRef(null);
+
+  // Function to handle paste action
+  const handlePaste = () => {
+    navigator.clipboard.readText().then((text) => {
+      setVideoURL(text);
+    });
+  };
 
   const getYouTubeThumbnail = (url) => {
     let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
@@ -43,8 +51,9 @@ const Index = () => {
           Download high-quality thumbnails from YouTube videos.
         </p>
       </header>
-      <div className="text-center">
+      <div className="flex items-center justify-center">
         <input
+          ref={inputRef}
           type="text"
           className="w-full md:w-1/2 px-4 py-2 border rounded"
           placeholder="Enter YouTube URL"
@@ -52,10 +61,16 @@ const Index = () => {
           onChange={(e) => setVideoURL(e.target.value)}
         />
         <button
-          className="btn-blue mt-2"
+          className="btn-blue ml-2"
           onClick={() => getYouTubeThumbnail(videoURL)}
         >
           Download Youtube Thumbnails
+        </button>
+        <button
+          className="btn-blue ml-2"
+          onClick={handlePaste}
+        >
+          Paste
         </button>
       </div>
       {thumbnailOptions.length > 0 && (
