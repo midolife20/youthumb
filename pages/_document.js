@@ -1,6 +1,4 @@
-// pages/_document.js
-
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
@@ -14,10 +12,7 @@ class MyDocument extends Document {
             content="YouTube Thumbnail Extractor - Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes."
           />
           <title>YouTube Thumbnail Extractor</title>
-          <meta
-            property="og:title"
-            content="YouTube Thumbnail Extractor"
-          />
+          <meta property="og:title" content="YouTube Thumbnail Extractor" />
           <meta
             property="og:description"
             content="Get free thumbnail image of any YouTube videos in Full HD, HD, SD, and small sizes."
@@ -101,16 +96,18 @@ class MyDocument extends Document {
               color: #333;
             }
           `}</style>
-          <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232117363-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-232117363-1');
-</script>
-
+          {/* Google Analytics */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232117363-1"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-232117363-1');
+              `,
+            }}
+          />
         </Head>
         <body>
           <header>
@@ -122,7 +119,6 @@ class MyDocument extends Document {
           </header>
           <Main />
           <NextScript />
-
           <section className="content">
             {/* Separator before the first line of text */}
             <div className="separator"></div>
@@ -158,7 +154,6 @@ class MyDocument extends Document {
               No, reusing YouTube thumbnails is not SEO friendly as Google indexes them. Make your thumbnails unique using software like Photoshop for better SEO results.
             </p>
           </section>
-
           <footer>
             <p>&copy; {new Date().getFullYear()} YouTube Thumbnail Extractor. All rights reserved.</p>
             <nav>
