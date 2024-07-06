@@ -97,14 +97,14 @@ class MyDocument extends Document {
             }
           `}</style>
           {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232117363-1"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSXXHEV75"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'UA-232117363-1');
+                gtag('config', 'G-7BSXXHEV75');
               `,
             }}
           />
