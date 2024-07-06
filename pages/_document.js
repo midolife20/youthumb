@@ -7,19 +7,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        //Start Analytics 
-
-        <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSXXHEV75"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-7BSXXHEV75');
-          </script>
-
-        //End Analytics
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta
@@ -114,6 +101,19 @@ class MyDocument extends Document {
               color: #333;
             }
           `}</style>
+          //Start Analytics 
+
+        <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BSXXHEV75"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-7BSXXHEV75');
+          </script>
+
+        //End Analytics
         </Head>
         <body>
           <header>
