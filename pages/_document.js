@@ -101,6 +101,16 @@ class MyDocument extends Document {
               color: #333;
             }
           `}</style>
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232117363-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-232117363-1');
+</script>
+
         </Head>
         <body>
           <header>
