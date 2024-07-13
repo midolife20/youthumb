@@ -123,7 +123,7 @@ class MyDocument extends Document {
           <section className="content">
             {/* Separator before the first line of text */}
             <div className="separator"></div>
-            <h1>YouTube Thumbnail Extractor</h1>
+            <h1>YouTube Thumbnail Downloader</h1>
             <p>
               Get free thumbnail images of any YouTube videos in Full HD (1080), HD (720), SD, and small sizes.
             </p>
