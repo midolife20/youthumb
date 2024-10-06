@@ -133,7 +133,7 @@ class MyDocument extends Document {
             </p>
             <h2>How to use this YouTube thumbnail extractor website?</h2>
             <p>
-                This tool let you download thumbnails of all quality by entering the URL of the video that you need to download it'\s youtube thumbnail. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail images.
+                This tool let you download thumbnails of all quality by entering the URL of the video that you need to download it's youtube thumbnail. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail images.
             </p>
             <p>
               For Android users, save the images directly. iPhone users may need alternative methods.
