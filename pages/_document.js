@@ -133,7 +133,7 @@ class MyDocument extends Document {
             </p>
             <h2>How to use this YouTube thumbnail extractor website?</h2>
             <p>
-              Simply copy the YouTube video link whose thumbnail you want, paste it into the input box, and the website will automatically generate thumbnails in different sizes. Click the download button to save the thumbnail to your system.
+                This tool let you download thumbnails of all quality by entering the URL of the video that you need to download it'\s youtube thumbnail. Just paste the URL of the thumbnail video in the below input and click Get Thumbnail images.
             </p>
             <p>
               For Android users, save the images directly. iPhone users may need alternative methods.
