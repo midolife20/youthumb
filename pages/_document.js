@@ -118,8 +118,6 @@ class MyDocument extends Document {
               </div>
             </a>
 
-            // Admob On Web test 
-
 
 <script>
 
